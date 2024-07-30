@@ -1,11 +1,11 @@
 const { Telegraf, Markup } = require("telegraf");
-const TOKEN = "YOUR BOT TOKEN";
+const TOKEN = "7337561288:AAEt3yeviJBEO_gWRIKafteGb14jyn1GQn4";
 const bot = new Telegraf(TOKEN);
 const express = require("express");
 const app = express()
 app.use(express.json())
-const web_link = "https://7d029740d8ae.ngrok.app";
-const community_link = "https://t.me/concept_developer"; 
+const web_link = "https://billgates1-0.netlify.app/";
+const community_link = "https://t.me/titimoburat_01"; 
 
 
 bot.start((ctx) => {
@@ -13,7 +13,7 @@ bot.start((ctx) => {
     const urlSent = `${web_link}?ref=${startPayload}`;
     const user = ctx.message.from;
     const userName = user.username ? `@${user.username}` : user.first_name;
-    ctx.replyWithMarkdown(`*Hey, Welcome to My Bot! Contact the Developer of this bot web app @concept_developer for your own projects today*
+    ctx.replyWithMarkdown(`*Hey, Welcome to My Bot! Contact the Developer of this bot web app @Joshllcdevs for your own projects today*
 Tap on the coin and see token rise.
       
 *THIS BOT Bot* is a Decentralized Exchange on the TON Blockchain. The biggest part of bot TOKEN distribution will occur among the players here.
